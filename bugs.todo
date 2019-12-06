@@ -1,0 +1,28 @@
+
+A) pages artists/:id and albums/:id
+-- rates posting behaviour unstable
+-- user rate not showing
+-- should create one unified server route to handle different resources types rating
+
+
+B) admin : forms artist AND albums
+-- FIX select/option default behaviour :
+---- the forms are listening to onChange events:
+ if the user doesn't select one time, empty objectid references are sent
+
+
+C) auth user page refresh problem (client)
+when reloading  page on a unprotected route, the currentUser is lost even if auth-cookie persists 
+(ex: the admin nav disapears)
+
+
+ D) missing auth  middlewares (backend)
+ on protected routes: should perform systematic server side check auth cookie and send 403 error if missing 
+
+
+ E) axios interceptors leverage ?
+ systematicaly intercept all 403 response and handle automatic signout
+
+ F) handling deleted resources
+ - check null references in other collections (check populate)
+ - display view components for missing resources

@@ -1,0 +1,104 @@
+Module 3 MEARN Project Guidelines
+-----------------------------------------------------------------------
+
+# DAY 1 (Wednesday)
+
+- Define the project title + subject
+- Define the main question your app is answering to
+- Design your user's stories + sitemap
+- Design the database models on paper
+- Create a Trello to organise your team (todo, pending, done, bugs, urgent) (associate color per user)
+- On Trello, prioritize your task (must do, should do, may do, wont' do)
+- Mockup the different pages on paper and review them with UI/UX students
+- IMPORTANT : Design your API (Routes + DB Queries) with Postman
+- Setup the express server
+- Setup the react client
+- Setup 2 git repos (1 client, 1 server)
+- think, code, test, redo ...
+
+-----------------------------------------------------------------------
+
+# DAY 2 
+
+- focus on your models !
+- be precise, try to plan everything (devil is in the details)
+- sketch your client app forms
+- check if you have all infos in your models according to your forms
+- implement your api : express routes + db queries
+- test each api's routes with Postman
+
+-----------------------------------------------------------------------
+# DAY 3 (don't forget to GIT)
+
+- #ADVICE_REMINDER: if not done : mockup the different pages on paper and review them with UI/UX students
+
+#back
+- double check your models structures
+- enhance your api, take your time, it will be beneficial while coding the front
+- figure out all the needed db queries (search, favorites, likes, friends, groups, etc)
+- do you really have all the express routes setup ?
+- add some validation rules to your models if needed (require, validation functions...)
+
+#WARNING ###
+
+- BEWARE !!! |=> all the way around the client/server cycle ...
+- be ultra carefull about your object's property names :
+
+!!! try to be consistent !!!
+
+- model keys should match corresponding :
+-- req.body/req.params keys and,
+-- components state keys and,
+-- [html input names]
+----> unconsistency here is an endless cause of bugs
+
+/WARNING ###
+
+#front
+- #PLAN: list all the needed components to integrate all the pages (D.R.Y)
+
+- think about your css naming conventions
+- code the main layout of your application (header / main / footer / sibar)
+
+- list all your app pages and integrate a navigation system in your react app using react-router-dom
+-- HINT : the routing setup should reflect the sitemap you've done DAY 1. 
+-- create all corresponding page components (dont' forget 404)
+
+- inspect the artistify demo app
+- spot the interesting features that you can  use in your project
+- check the client/server auth process
+- you may use the demo server-app to finish your server setup
+
+when done, skip to day 4 guidelines
+
+-----------------------------------------------------------------------
+# DAY 4 (don't forget to GIT)
+
+# front
+- integrate the react base CRUD components
+---1-> forms-create to Create the main resources
+---2-> tables to Read resources
+---3-> forms-edit to Update 
+---4-> link in table to Delete resources
+
+- code a component for validation/error display
+
+-----------------------------------------------------------------------
+# DAY 5 (don't forget to GIT)
+
+- enhance/finish the base CRUD and test it in depth
+
+... then
+
+- debrief with team : plan the main "business logic" components developement phase
+- divide the work in small chunks and sprint for features completion
+-- you may want to think to
+--> component logic
+--> templating (jsx)
+--> styling
+--> API communication via AJAX
+--> server routing/middlewares/validation
+--> database querying
+--> api reponse/error handling
+
+- do... while(!done)

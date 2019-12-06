@@ -1,0 +1,13 @@
+.logo {
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#header_main .logo {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
